@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>faths portofolio</title>
+  <style>
+    body {
+      font-family: Arial, Sans-Serif;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      background-color: #000;
+    }
+    .glow {
+      font-family: 'Courier New', monospace;
+      color: gold;
+      text-shadow: 
+      0 0 16px #00f0ff, 
+      0 0 20px #00f0ff, 
+      0 0 14px #00f0ff;
+      animation: gg 3.2s infinite alternate;
+      display: block;
+    }
+    
+    .gloww {
+      font-family: 'Courier New', monospace;
+      color: gold;
+      text-shadow: 
+      0 0 12px gold, 
+      0 0 20px gold,
+      0 0 10px gold;
+    }
+    .glowww {
+      font-family: 'Courier New', monospace;
+      color: gold;
+      text-shadow: 
+      0 0 12px gold, 
+      0 0 20px gold,
+      0 0 10px gold;
+      animation: jold 0.5s infinite;
+    }
+    input {
+      border-radius: 19px;
+      border: 3px solid gold;
+      box-shadow: 
+      0 0 12px yellow, 
+      0 0 12px yellow, 
+      0 0 12px yellow;
+      background-color: #33ff12;
+      margin-bottom: 30px;
+      margin: 30px;
+    } 
+    input:focus {
+      box-shadow:
+      0 0 12px darkblue, 
+      0 0 12px darkblue, 
+      0 0 12px darkblue;
+      background-color: gold;
+      animation: gg 1s, jold 1s;
+    } 
+    button {
+      border-radius: 20px;
+      border: 2px solid gold;
+      margin-bottom: 30px;
+      background-color: #33ff12;
+      box-shadow:
+      0 0 13px gold, 
+      0 0 13px gold,  
+      0 0 13px gold;
+    } 
+    .rott {
+      background-color: red;
+      font-family: 'Courier New', monospace;
+      color: cyan;
+    } 
+    .jump {
+      background-color: darkblue;
+      font-family: 'Courier New', monospace;
+      color: yellowgreen;
+    }
+    .cp {
+      background-color: black;
+      color: white;
+      font-family: 'Courier New', monospace;
+    }
+    .btbox {
+      width: 340px;
+      height: 350px;
+      border-radius: 25px;
+      border: 2px solid gold;
+      box-shadow: 
+      0 0 12px cyan, 
+      0 0 16px cyan, 
+      0 0 20px cyan;
+      margin-bottom: 15px;
+    }
+    .bttbox {
+      display: grid;
+      grid-template-columns: repeat(1,1fr) ;
+      gap: 10px;
+    } 
+     
+    @keyframes rottt {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(360deg);}
+    }
+    @keyframes jumppp {
+      from {transform: translateY(0);}
+      to {transform: translateY(-10px);}
+    }
+    @keyframes jold {
+      0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+    }
+
+    @keyframes gg {
+      0% {
+        transform: translate(1,1);
+      }
+      50% {
+        transform: translate(-10px, 20px);
+      }
+     }
+     
+      
+   </style>
+  
+</head>
+<body>
+  <h1 class="glow">Hi im fathul, im a junior coder, 14 yo and will be a fullstack developer</h1>
+  <br>
+  <p class="gloww">Ini portofolio pertama ku yang tentunya ya,basic lah. ÷_÷</p>
+  <p class="gloww">Di portofolio ku ini aku hanya akan styling beberapa button dasar doang, ga ada javascript karena logika ku di js belum kuat. 
+   Ya ada sih dikit walau basic.</p >
+  <p class="gloww">Oh iya ini list-list button yang akan kalian lihat pada website ini. </p>
+  <ul class="gloww">
+    <li class="gloww">button yang berputar/rotate</li>
+    <li class="gloww">button yang berpindah-pindah tempat</li>
+    <li class="gloww">button yang melompat lompat di tempat</li>
+    </ul>
+  <h1 class="glowww">STYLING BUTTON</h1>
+  <div class="btbox">
+      <input type="text" class="jojo" placeholder="ketik apa aja kalau gabut">
+      <br>
+      <div class="bttbox">
+          <button class="rott" id="rot" onclick="rOtat()">Rotate button</button>
+          <button class="cp" id="cppp" onclick="cP()">Change position</button>
+          <button class="jump" id="jumpp" onclick="jumP()">Jump button</button>
+  </div>
+  </div>
+  <p class="gloww">button nya bisa di pencet berulang kali dengan cara di refresh dulu, setiap refresh kita bisa klik 1×</p> 
+  <a class="gloww">My tiktok: tiktok.com/@kenadtmulu03</a>
+  <a class="gloww">My instagram usn: @kingavenirgpt </a>
+<script> 
+    function rOtat() {
+      let play = document.querySelector(".jojo"); 
+      let rt = document.getElementById("rot");
+      rt.style.animation = "rottt 0.7s linear";
+      play.value = "rotate button has been clicked!";
+    } 
+    function cP() {
+      let play = document.querySelector(".jojo");
+      let cpp = document.getElementById("cppp");
+      cpp.style.animation = "gg 0.9s";
+      play.value = "position button has been changed";
+    }
+    function jumP() {
+      let play = document.querySelector(".jojo");
+      let jmp = document.getElementById("jumpp");
+      play.value = "jump button has been clicked!"; 
+      jmp.style.animation = "jumppp 0.5s"
+    } 
+    
+   
+</script>
+</body>
+</html>
+
+  
